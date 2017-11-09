@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+}
+
+/*box-sizing will ensure an element stays within a parent width, even if padding or borders are applied.*/
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	height: 100%;
+	background-color: gray;
+}
+
+.surroundContainer {
+	height: 100%;
+	/*do i need this? I don't think so. Let's keep it out for now.*/
+/*	overflow: auto;*/
+	white-space: nowrap;
+	font-size: 0;
+}
+
+.hPage {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	font-size: 14;
+	color: white;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/*#test{
+	background-image: url("barnCloseup.png");
+	background-size: cover;
+	position: relative;
+	width: 45%;
+	height: 55%;
+	border-bottom: 5px solid #7F2612;
+	border-left: 5px solid #7F2612;
+}*/
+
+.scroller {
+	/*This scroll-snap functionality only works in Safari*/
+	-webkit-scroll-snap-type: mandatory;
+	-webkit-scroll-snap-points-x: repeat(100%);
+
+	/*This scroll snap functionality is part of a polyfill 
+	that enables the functionality in Chrome.*/
+	scroll-snap-type: mandatory;
+  	scroll-snap-destination: 0% 100%;
+  	scroll-snap-points-x: repeat(100%);
+	/*Here, I've set the width to be 100% of the VW 
+	(the portion of the screen that the viewer sees before scrolling).
+	Thus, overflow occurs (because my divs stretch three screens or three VWs, basically)
+	and the scroll event from scrollsnap-polyfill.js is triggered.*/
+  	width: 100vw;
+	overflow: auto;
+}
+
+/*This is a class to add outside gutters*/
+.grid-pad {
+	padding: 20px 20px 20px 20px;
+}
+
+/*Here we are 'clearing context' with a clearfix hack Not sure how it works!*/
+/*Doesn't really seem to be needed, but not sure why. Ask Sam.*/
+.home:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*='col-'] {
+	float: left;
+	padding-right: 20px;
+}
+
+.col-1-3-home {
+	width: 33.33%;
+}
+
+.col-1-3-home2 {
+	width: 33.33%;
+}
+
+.col-1-3-home3{
+	width: 33.33%;
+}
+
+.button {
+	float: left;
+	height: 50px;
+	width: 100px;
+	border: 2px solid white;
+	padding: 13px;
+	margin: 130px 5px 0px 5px;
+/*
+	vertical-align: middle;
+	text-align: center;*/
+	text-decoration: none;
+	font-family: 'Spinnaker';
+	font-size: 18px;
+	color: white;
+    text-transform: uppercase;
+}
+
+.buttonText {
+	margin-left: 1px;
+} 
+
+
+/*.buttonLeft {
+	position: absolute;
+	top: 130px;
+	left: 30px;
+}
+
+.buttonRight {
+	position: absolute;
+	top: 130px;
+	right: 30px;
+}*/
+
+.button:hover {
+	border: 2px solid Orange;
+	color: Orange; 
+}
+
+#homeImg {
+	background-image: url("/images/moonlit.jpg");
+}
+
+#kira {
+	font-size: 60px;
+    font-family: 'Monoton';
+    position: relative;
+    top: 40px;
+    padding-left: 50px;
+}
+
+#pilot {
+	font-size: 75px;
+	font-family: 'Monoton';
+	padding-left: 50px;
+}
+
+#AboutImg {
+	background-image: url("/images/barn.png");
+}
+
+#CreditImg {
+	background-image: url("/images/found.jpg");
+}
