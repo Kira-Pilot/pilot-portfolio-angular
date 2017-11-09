@@ -1,5 +1,5 @@
 {
-  "name"         : "pilot-portfolio-angular",
+  "name"         : "pilot-portfolio",
   "version"      : "0.0.0",
   "description"  : "80's themed portfolio",
   "main"         : "server.js",

@@ -1,6 +1,6 @@
 <!-- main view -->
 
-<html>
+<html ng-app="pilotPortfolio">
 <head>
     <link rel="stylesheet" type="text/css" href="css/styling.css">
     <title>Pilot's Profile</title>
@@ -8,8 +8,19 @@
     <link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Spinnaker' rel='stylesheet' type='text/css'>
+
+
+    <script src="scrollsnap/polyfill.js"></script>
+    <script src="scrollsnap/scrollsnap-polyfill.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+    <script src="core.js"></script>
+    <script src="portfolio_directives.js"></script>
+
+
+
 </head>
-<body>
+<body ng-controller="mainController">
 <!-- This is the wrapper for the entire page -->
 <div class="wrapper">
     <!-- This is the div that contains the horizontal scrolling -->
@@ -33,9 +44,7 @@
         <div id="CreditImg" class="hPage"></div>
     </div>
 </div>
-<script src="scrollsnap/polyfill.js"></script>
-<script src="scrollsnap/scrollsnap-polyfill.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 <script src="novacancy/jquery.novacancy.js"></script>
 <script>
   $('#kira').novacancy();
@@ -47,5 +56,6 @@
     'glow': ['0 0 80px Red', '0 0 30px FireBrick', '0 0 6px DarkRed']
   });
 </script>
+
 </body>
 </html>

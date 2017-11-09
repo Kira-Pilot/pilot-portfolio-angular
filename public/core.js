@@ -1,1 +1,8 @@
-<!-- all angular code for our app -->
+var pilotPortfolio = angular.module('pilotPortfolio', []);
+
+function mainController($scope, $http) {
+  $scope.test = "KIRA"
+}
+
+
+

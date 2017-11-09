@@ -20,8 +20,6 @@ html, body {
 
 .surroundContainer {
 	height: 100%;
-	/*do i need this? I don't think so. Let's keep it out for now.*/
-/*	overflow: auto;*/
 	white-space: nowrap;
 	font-size: 0;
 }
@@ -36,16 +34,6 @@ html, body {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
-/*#test{
-	background-image: url("barnCloseup.png");
-	background-size: cover;
-	position: relative;
-	width: 45%;
-	height: 55%;
-	border-bottom: 5px solid #7F2612;
-	border-left: 5px solid #7F2612;
-}*/
 
 .scroller {
 	/*This scroll-snap functionality only works in Safari*/
@@ -67,7 +55,7 @@ html, body {
 
 /*This is a class to add outside gutters*/
 .grid-pad {
-	padding: 20px 20px 20px 20px;
+	padding: 20px;
 }
 
 /*Here we are 'clearing context' with a clearfix hack Not sure how it works!*/
@@ -102,9 +90,6 @@ html, body {
 	border: 2px solid white;
 	padding: 13px;
 	margin: 130px 5px 0px 5px;
-/*
-	vertical-align: middle;
-	text-align: center;*/
 	text-decoration: none;
 	font-family: 'Spinnaker';
 	font-size: 18px;
@@ -114,20 +99,7 @@ html, body {
 
 .buttonText {
 	margin-left: 1px;
-} 
-
-
-/*.buttonLeft {
-	position: absolute;
-	top: 130px;
-	left: 30px;
 }
-
-.buttonRight {
-	position: absolute;
-	top: 130px;
-	right: 30px;
-}*/
 
 .button:hover {
 	border: 2px solid Orange;
