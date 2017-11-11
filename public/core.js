@@ -1,8 +1,8 @@
-var pilotPortfolio = angular.module('pilotPortfolio', []);
+var app = angular.module('pilotPortfolio', []);
 
-function mainController($scope, $http) {
-  $scope.test = "KIRA"
-}
+app.controller("mainCtrl", function($scope) {
+  $scope.test = "Kira";
+});
 
 
 
