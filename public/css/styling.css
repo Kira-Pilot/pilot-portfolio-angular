@@ -14,25 +14,14 @@ html, body {
 }
 
 .wrapper {
-	height: 100%;
+	height: 100vh;
 	background-color: gray;
 }
 
 .surroundContainer {
-	height: 100%;
+	height: 100vh;
 	white-space: nowrap;
 	font-size: 0;
-}
-
-.hPage {
-	display: inline-block;
-	height: 100%;
-	width: 100%;
-	background-color: black;
-	font-size: 14;
-	color: white;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 .scroller {
@@ -40,22 +29,51 @@ html, body {
 	-webkit-scroll-snap-type: mandatory;
 	-webkit-scroll-snap-points-x: repeat(100%);
 
-	/*This scroll snap functionality is part of a polyfill 
+	/*This scroll snap functionality is part of a polyfill
 	that enables the functionality in Chrome.*/
 	scroll-snap-type: mandatory;
-  	scroll-snap-destination: 0% 100%;
-  	scroll-snap-points-x: repeat(100%);
-	/*Here, I've set the width to be 100% of the VW 
+	scroll-snap-destination: 0% 100%;
+	scroll-snap-points-x: repeat(100%);
+	/*Here, I've set the width to be 100% of the VW
 	(the portion of the screen that the viewer sees before scrolling).
 	Thus, overflow occurs (because my divs stretch three screens or three VWs, basically)
 	and the scroll event from scrollsnap-polyfill.js is triggered.*/
-  	width: 100vw;
+	width: 100vw;
 	overflow: auto;
 }
+
+.background-image-full {
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.inline {
+	display: inline-block;
+}
+
+
+
+/*.hPage {*/
+	/*display: inline-block;*/
+	/*height: 100%;*/
+	/*width: 100%;*/
+	/*background-color: black;*/
+	/*font-size: 14;*/
+	/*color: white;*/
+	/*background-size: cover;*/
+	/*background-repeat: no-repeat;*/
+/*}*/
 
 /*This is a class to add outside gutters*/
 .grid-pad {
 	padding: 20px;
+}
+
+.margin-20 {
+	margin: 20px;
 }
 
 /*Here we are 'clearing context' with a clearfix hack Not sure how it works!*/
@@ -106,6 +124,10 @@ html, body {
 	color: Orange; 
 }
 
+
+
+/*____________________________________________________*/
+
 #homeImg {
 	background-image: url("/images/moonlit.jpg");
 }
@@ -130,4 +152,66 @@ html, body {
 
 #CreditImg {
 	background-image: url("/images/found.jpg");
+}
+
+
+/*------------------------------*/
+
+
+.container {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+.row {
+	flex-flow: row;
+	-webkit-flex-flow: row;
+}
+
+.column {
+	flex-flow: column;
+}
+
+.justify-start {
+	justify-content: flex-start;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-space-between {
+	justify-content: space-between;
+}
+
+.justify-space-around {
+	justify-content: space-around;
+}
+
+.align-start {
+	align-content: flex-start;
+}
+
+.align-end {
+	align-content: flex-end;
+}
+
+.align-center {
+	align-content: center;
+}
+
+.align-space-between {
+	align-content: space-between;
+}
+
+.align-space-around {
+	align-content: space-around;
 }
