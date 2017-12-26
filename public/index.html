@@ -12,8 +12,14 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script><!-- load angular -->
     <script src="core.js"></script>
     <script src="portfolio_components.js"></script>
+    <script src="angularjs-stellar/js/stellar.directives.js"></script>
+    <script src="angularjs-stellar/vendor/jquery.stellar.min.js"></script>
+
 </head>
-<body ng-controller="mainCtrl">
+<body ng-controller="mainCtrl" stellar-background="0.8">
+<div class="planet" stellar="0.8" stellar-hor="0"></div>
+<div class="sun" stellar="1.2" stellar-vert="0"></div>
+
 <!-- This is the wrapper for the entire page -->
 <div class="wrapper">
     <!-- This is the div that contains the horizontal scrolling -->

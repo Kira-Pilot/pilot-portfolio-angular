@@ -69,14 +69,6 @@ html, body {
 	color: Orange;
 }
 
-.arrow {
-	color: white;
-	font-size: 50px;
-	position: relative;
-	bottom: -300px;
-	right: -400px;
-}
-
 .margin-10 {
 	margin: 10px;
 }
@@ -188,3 +180,62 @@ html, body {
 .align-space-around {
 	align-content: space-around;
 }
+
+/*------------------------------*/
+/*TEST*/
+
+.constellation {
+	float: left;
+	height: 196px;
+	position: relative;
+	width: 140px;
+}
+
+.constellation .large {
+	border-radius: 4px;
+	height: 8px;
+	margin: 1px;
+	width: 8px;
+}
+
+.c .star1 {
+	top: 31px;
+	left: 25px;
+}
+
+.star {
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 0 0 20px rgba(164, 204, 244, 0.65);
+	height: 8px;
+	left: 0;
+	margin: 1px;
+	position: absolute;
+	top: 0;
+	width: 8px;
+	z-index: 2;
+}
+
+
+.planet {
+	background-color: #000000;
+	border-radius: 1000px;
+	left: -1000px;
+	height: 2000px;
+	position: fixed;
+	top: 500px;
+	width: 2000px;
+	z-index: 5;
+}
+.sun {
+	background-color: #5C550A;
+	border-radius: 100px;
+	box-shadow: 0 0 30px #5C550A;
+	height: 200px;
+	left: 650px;
+	position: fixed;
+	top: 800px;
+	width: 200px;
+	z-index: 6;
+}
+
