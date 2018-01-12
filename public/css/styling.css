@@ -77,6 +77,10 @@ html, body {
 	margin: 40px;
 }
 
+.margin-90 {
+	margin: 90px;
+}
+
 .padding-50 {
 	padding: 50px;
 }
@@ -184,25 +188,6 @@ html, body {
 /*------------------------------*/
 /*TEST*/
 
-.constellation {
-	float: left;
-	height: 196px;
-	position: relative;
-	width: 140px;
-}
-
-.constellation .large {
-	border-radius: 4px;
-	height: 8px;
-	margin: 1px;
-	width: 8px;
-}
-
-.c .star1 {
-	top: 31px;
-	left: 25px;
-}
-
 .star {
 	background-color: white;
 	border-radius: 4px;
@@ -216,26 +201,32 @@ html, body {
 	z-index: 2;
 }
 
+.constellation .xlarge {
+	border-radius: 6px;
+	height: 10px;
+	width: 10px;
+}
 
-.planet {
-	background-color: #000000;
-	border-radius: 1000px;
-	left: -1000px;
-	height: 2000px;
-	position: fixed;
-	top: 500px;
-	width: 2000px;
-	z-index: 5;
+.constellation .large {
+	border-radius: 4px;
+	height: 8px;
+	margin: 1px;
+	width: 8px;
 }
-.sun {
-	background-color: #5C550A;
-	border-radius: 100px;
-	box-shadow: 0 0 30px #5C550A;
-	height: 200px;
-	left: 650px;
-	position: fixed;
-	top: 800px;
-	width: 200px;
-	z-index: 6;
+
+.constellation .medium {
+	border-radius: 3px;
+	height: 6px;
+	margin: 2px;
+	width: 6px;
 }
+
+.constellation .small {
+	border-radius: 2px;
+	height: 4px;
+	margin: 3px;
+	width: 4px;
+}
+
+
 
